@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Step 1: The Image Data Structure
+
 typedef struct {
     int width;
     int height;
@@ -95,7 +95,7 @@ void write_pgm(const char *filename, Image *img){
 
 }
 
-
+//crazy func
 Image* apply_laplacian(Image *input) {
 
     Image *output = create_image(input->height, input->width);
