@@ -95,7 +95,6 @@ void write_pgm(const char *filename, Image *img){
 
 }
 
-//crazy func
 Image* apply_laplacian(Image *input) {
 
     Image *output = create_image(input->height, input->width);
@@ -148,14 +147,13 @@ int main(int argc, char **argv){
 
         printf("Success! Dimensions: %d x %d\n", my_image->width, my_image->height);
 
-        // Apply the differential equation math!
         printf("Applying Laplacian Edge Detection...\n");
         Image *edges = apply_laplacian(my_image);
 
         printf("Saving edges to %s...\n", argv[2]);
         write_pgm(argv[2], edges);
 
-        // Clean up both images from RAM
+
         free_image(my_image);
         free_image(edges);
 
