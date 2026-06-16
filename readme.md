@@ -143,7 +143,7 @@ The following example demonstrates the effect of applying the Laplacian operator
 
 | Original Image (`input.pgm`) | Edge Map (`output.pgm`) |
 | :--------------------------: | :---------------------: |
-| ![](images/input.png) | ![](images/output.png) |
+| ![](input.png) | ![](output.png) |
 
 The output image highlights regions of rapid intensity variation. Pixels corresponding to detected edges are rendered white (**255**), while non-edge regions remain black (**0**).
 
